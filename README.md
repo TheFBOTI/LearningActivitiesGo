@@ -5,7 +5,7 @@ More to be added in time...
 # Phase 1: Foundational Knowledge (2-4 weeks)
 1.	Objective: Get comfortable with Go's syntax, tools, and basic features.
 2.	Activities:
-	  - Hello World CLI App
+	  - ~~Hello World CLI App~~ - Completed
           -	Write a command-line tool that prints "Hello, World!" and takes optional flags (e.g., --name).
            - Skills: Basic syntax, flag package usage.
       - Temperature Converter
