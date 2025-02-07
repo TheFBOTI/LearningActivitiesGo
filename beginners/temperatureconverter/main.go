@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("Please enter the type of temperature you wish to convert to")
 	fmt.Scanln(&temperatureType)
 
-	if temperatureType != "c" && temperatureType != "f" && !strings.EqualFold("celsius", temperatureType) && !strings.EqualFold("fahrenheit", temperatureType) {
+	if !strings.EqualFold("c", temperatureType) && !strings.EqualFold("f", temperatureType) && !strings.EqualFold("celsius", temperatureType) && !strings.EqualFold("fahrenheit", temperatureType) {
 		fmt.Println("Unknown temperature type provided, exiting")
 		os.Exit(1)
 	} else if temperatureType == "c" || temperatureType == "f" {
@@ -32,7 +32,7 @@ func main() {
 
 	var celsius int
 	var fahrenheit float64
-	if temperatureType == "c" || strings.EqualFold("celsius", temperatureType) {
+	if strings.EqualFold("c", temperatureType) || strings.EqualFold("celsius", temperatureType) {
 		fmt.Println("Fahrenheit is worked out by taking Celsius and multiplying by 1.8, then adding 32.")
 		celsius = temperatureValue
 		fmt.Printf("Celsius is: %d\n", celsius)

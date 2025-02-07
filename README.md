@@ -8,7 +8,7 @@ More to be added in time...
 	  - ~~Hello World CLI App~~ - Completed
           -	Write a command-line tool that prints "Hello, World!" and takes optional flags (e.g., --name).
            - Skills: Basic syntax, flag package usage.
-      - Temperature Converter
+      - ~~Temperature Converter~~
            - Create a program to convert temperatures between Fahrenheit, Celsius, and Kelvin.
            - Skills: I/O, conditionals, and simple math.
       - Basic File Manipulation
