@@ -25,19 +25,25 @@ func main() {
 	} else {
 		fmt.Println(temperatureType + " has been selected")
 	}
-	fmt.Println("Fahrenheit is worked out by taking Celsius and multipling by 1.8, then adding 32.")
 
-	celsius := 10
-	fmt.Printf("Celsius is: %d\n", celsius)
-	farenheit := (float64(celsius) * 1.8) + 32
+	var temperatureValue int
+	fmt.Println("Please enter the value of temperature you want to be converted")
+	fmt.Scanln(&temperatureValue)
 
-	fmt.Printf("Farenheit is: %gf based on Celsisus being: %d\n ", farenheit, celsius)
+	var celsius int
+	var fahrenheit float64
+	if temperatureType == "c" || strings.EqualFold("celsius", temperatureType) {
+		fmt.Println("Fahrenheit is worked out by taking Celsius and multiplying by 1.8, then adding 32.")
+		celsius = temperatureValue
+		fmt.Printf("Celsius is: %d\n", celsius)
+		fahrenheit = (float64(celsius) * 1.8) + 32
 
-	farenheit = 60
-	fmt.Printf("Farenheit is: %g\n", farenheit)
-
-	celsius = int((farenheit - 32) / 1.8)
-
-	fmt.Printf("Celsius is: %d where farenheit is: %g\n", celsius, farenheit)
-
+		fmt.Printf("Farenheit is: %gf based on Celsisus being: %d\n ", fahrenheit, celsius)
+	} else {
+		fmt.Println("Celsius is worked out by taking Fahrenheit subtracting 32 and then dividing by 1.8.")
+		fahrenheit = float64(temperatureValue)
+		fmt.Printf("Fahrenheit is: %g\n", fahrenheit)
+		celsius = int((fahrenheit - 32) / 1.8)
+		fmt.Printf("Celsius is: %d where fahrenheit is: %g\n", celsius, fahrenheit)
+	}
 }
