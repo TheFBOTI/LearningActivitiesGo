@@ -1,0 +1,8 @@
+Hello,
+this is a test file to test the capacity of the main.go class for fileReader.
+
+Hopefully it will be able to count the number of times a specific word is repeated when tested.
+As mentioned this is only a test file - nothing more.
+
+Thanks ~
+Fboti
