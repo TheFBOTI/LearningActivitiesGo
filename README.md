@@ -11,7 +11,7 @@ More to be added in time...
       - ~~Temperature Converter~~
            - Create a program to convert temperatures between Fahrenheit, Celsius, and Kelvin.
            - Skills: I/O, conditionals, and simple math.
-      - Basic File Manipulation
+      - ~~Basic File Manipulation~~
            - Write a script to read a text file and count the frequency of words.
            - Skills: File handling, string manipulation, and maps.
       - Go Playground Programs
